@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DreamHome — Real Estate Listings</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="SSS.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">DH</div>
+        <div class="brand-text">
+          <div class="brand-name">DreamHome</div>
+          <div class="brand-sub">Find your dream property</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#">Buy</a>
+        <a href="#">Rent</a>
+        <a href="#">Sell</a>
+        <a href="#">Agents</a>
+        <a href="#">Blog</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn ghost">Login</button>
+        <button class="btn primary">List property</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner container">
+      <div class="hero-copy">
+        <h1>Find a place you'll love to live</h1>
+        <p class="lead">Handpicked homes from trusted agents — search, compare and book visits instantly.</p>
+      </div>
+
+      <!-- SEARCH CARD (overlapping) -->
+      <div class="search-card">
+        <form class="search-form" action="#" method="get" novalidate>
+          <div class="field">
+            <label class="sr-only" for="location">Location</label>
+            <input id="location" name="location" type="text" placeholder="City, area or landmark">
+          </div>
+
+          <div class="field">
+            <label class="sr-only" for="type">Type</label>
+            <select id="type" name="type">
+              <option value="">Any type</option>
+              <option>Apartment</option>
+              <option>House</option>
+              <option>Villa</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="sr-only" for="beds">Beds</label>
+            <select id="beds" name="beds">
+              <option value="">Beds</option>
+              <option>1+</option>
+              <option>2+</option>
+              <option>3+</option>
+              <option>4+</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="sr-only" for="price">Price</label>
+            <select id="price" name="price">
+              <option value="">Price range</option>
+              <option>Under ₹50L</option>
+              <option>₹50L–₹1Cr</option>
+              <option>₹1Cr–₹2Cr</option>
+            </select>
+          </div>
+
+          <div class="field action">
+            <button class="btn primary" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN: SIDEBAR + LISTINGS -->
+  <main class="container page">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="card filter">
+        <h4>Filters</h4>
+
+        <label class="label">Property Type</label>
+        <div class="chips">
+          <button class="chip active">Any</button>
+          <button class="chip">Apartment</button>
+          <button class="chip">House</button>
+          <button class="chip">Villa</button>
+        </div>
+
+        <label class="label">Price (₹)</label>
+        <div class="range">
+          <input type="number" placeholder="Min">
+          <input type="number" placeholder="Max">
+        </div>
+
+        <label class="label">Bedrooms</label>
+        <div class="chips">
+          <button class="chip">1+</button>
+          <button class="chip">2+</button>
+          <button class="chip">3+</button>
+          <button class="chip">4+</button>
+        </div>
+
+        <label class="label">More</label>
+        <div class="checkboxes">
+          <label><input type="checkbox"> Furnished</label>
+          <label><input type="checkbox"> Pet friendly</label>
+          <label><input type="checkbox"> Parking</label>
+          <label><input type="checkbox"> Gym</label>
+        </div>
+
+        <div class="filter-actions">
+          <button class="btn outline">Reset</button>
+          <button class="btn primary">Apply</button>
+        </div>
+      </div>
+
+      <div class="card agent-card">
+        <h4>Featured agent</h4>
+        <div class="agent-sm">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Agent">
+          <div>
+            <div class="agent-name">Ananya Roy</div>
+            <div class="agent-sub">Senior Agent • 8 yrs</div>
+            <a class="link" href="#">View profile →</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- LISTINGS -->
+    <section class="listings">
+      <div class="list-head">
+        <h2>Trending properties</h2>
+        <div class="meta">Showing 1–9 of 1,248 results</div>
+      </div>
+
+      <div class="grid cards">
+        <!-- CARD 1 -->
+        <article class="prop card">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80" alt="Property">
+            <div class="price">₹82,00,000</div>
+            <button class="fav" aria-label="favorite">♡</button>
+          </div>
+          <div class="body">
+            <h3>Modern 2BHK in Central Location</h3>
+            <p class="muted">Sector 62, Ghaziabad · 2 Beds · 2 Baths · 1200 sqft</p>
+            <div class="meta-row">
+              <div class="by">By <strong>Ananya</strong></div>
+              <div class="when muted">2 days ago</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="prop card">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=80" alt="Property">
+            <div class="price">₹1,25,00,000</div>
+            <button class="fav" aria-label="favorite">♡</button>
+          </div>
+          <div class="body">
+            <h3>Spacious 3BHK with Balcony</h3>
+            <p class="muted">DLF Phase 3 · 3 Beds · 3 Baths · 1800 sqft</p>
+            <div class="meta-row">
+              <div class="by">By <strong>Rohit</strong></div>
+              <div class="when muted">1 week ago</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="prop card">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1572120360610-d971b9b1e1d3?auto=format&fit=crop&w=1400&q=80" alt="Property">
+            <div class="price">₹45,00,000</div>
+            <button class="fav" aria-label="favorite">♡</button>
+          </div>
+          <div class="body">
+            <h3>Cozy Studio Near Transit</h3>
+            <p class="muted">Noida Sector 18 · Studio · 1 Bath · 480 sqft</p>
+            <div class="meta-row">
+              <div class="by">By <strong>Meera</strong></div>
+              <div class="when muted">3 days ago</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="prop card">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1598928506312-3e7e04a6b8e6?auto=format&fit=crop&w=1400&q=80" alt="Property">
+            <div class="price">₹2,40,00,000</div>
+            <button class="fav" aria-label="favorite">♡</button>
+          </div>
+          <div class="body">
+            <h3>Luxurious 4BHK Villa with Garden</h3>
+            <p class="muted">Gautam Budh Nagar · 4 Beds · 3 Baths · 2400 sqft</p>
+            <div class="meta-row">
+              <div class="by">By <strong>Ananya</strong></div>
+              <div class="when muted">1 month ago</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 5 -->
+        <article class="prop card">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1597006004899-1e7d0b4f6a9b?auto=format&fit=crop&w=1400&q=80" alt="Property">
+            <div class="price">₹95,00,000</div>
+            <button class="fav" aria-label="favorite">♡</button>
+          </div>
+          <div class="body">
+            <h3>Chic 2BHK with Terrace</h3>
+            <p class="muted">Greater Noida · 2 Beds · 2 Baths · 1100 sqft</p>
+            <div class="meta-row">
+              <div class="by">By <strong>Rohit</strong></div>
+              <div class="when muted">2 weeks ago</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 6 -->
+        <article class="prop card">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1534751516642-a1af1ef4b5d0?auto=format&fit=crop&w=1400&q=80" alt="Property">
+            <div class="price">₹1,80,00,000</div>
+            <button class="fav" aria-label="favorite">♡</button>
+          </div>
+          <div class="body">
+            <h3>Elegant 3BHK Apartment</h3>
+            <p class="muted">Noida Extension · 3 Beds · 2 Baths · 1600 sqft</p>
+            <div class="meta-row">
+              <div class="by">By <strong>Meera</strong></div>
+              <div class="when muted">5 days ago</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- PAGINATION -->
+      <div class="pagination">
+        <button class="pg">‹ Prev</button>
+        <div class="pages">
+          <button class="pg active">1</button>
+          <button class="pg">2</button>
+          <button class="pg">3</button>
+          <button class="pg">4</button>
+          <span class="dots">…</span>
+          <button class="pg">10</button>
+        </div>
+        <button class="pg">Next ›</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>DreamHome</h3>
+        <p class="muted">© 2025 DreamHome — Built with HTML & CSS</p>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul class="links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <ul class="links">
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
